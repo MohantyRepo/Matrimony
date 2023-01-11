@@ -1,0 +1,11 @@
+{
+  "appId": "com.example.app",
+  "appName": "Matrimony",
+  "bundledWebRuntime": false,
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}

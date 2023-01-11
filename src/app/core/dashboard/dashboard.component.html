@@ -1,0 +1,22 @@
+<app-nav></app-nav>
+
+<div class="wrapper">
+    <div class="container">
+        <h1>Upload a file</h1>
+        <div class="upload-container">
+            <input type="file" (change)="onChange($event)" class="form-group py-2">
+            <button (click)="onUpload()" class="btn btn-success">Upload File</button>
+        </div>
+        <div class="text-center pt-2" *ngIf="emptyFlag">
+            <p>Please select file to upload!</p>
+        </div>
+        <div class="text-center pt-2" *ngIf="loading">
+            <p>Loading.....</p>
+        </div>
+        <div class="text-center pt-2" *ngIf="successMag">
+            <p>Uploaded successfully.</p>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
